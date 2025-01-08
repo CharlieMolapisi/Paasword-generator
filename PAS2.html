@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="PAS2.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Password Generator</h1>
+        <ul>
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#length8" class="nav-link">8 Characters</a></li>
+            <li><a href="#length16" class="nav-link">16 Characters</a></li>
+            <li><a href="#length24" class="nav-link">24 Characters</a></li>
+            <li><a href="#feedback" class="nav-link">Feedback</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <section class="container" id="home">
+            <h2>Welcome to the Password Generator</h2>
+            <p>This tool helps you create strong and secure passwords that are unique and meet the requirements for most websites. Choose a password length and generate a password that protects your online accounts.</p>
+        </section>
+
+        <section class="container" id="length8">
+            <h2>Generate 8 Character Password</h2>
+            <button class="generate" data-length="8">Generate Password</button>
+            <div class="result">
+                <h3>Your Password:</h3>
+                <p id="password8"></p>
+            </div>
+        </section>
+
+        <section class="container" id="length16">
+            <h2>Generate 16 Character Password</h2>
+            <button class="generate" data-length="16">Generate Password</button>
+            <div class="result">
+                <h3>Your Password:</h3>
+                <p id="password16"></p>
+            </div>
+        </section>
+
+        <section class="container" id="length24">
+            <h2>Generate 24 Character Password</h2>
+            <button class="generate" data-length="24">Generate Password</button>
+            <div class="result">
+                <h3>Your Password:</h3>
+                <p id="password24"></p>
+            </div>
+        </section>
+
+        <section class="container" id="feedback">
+            <h2>User Feedback</h2>
+            <textarea id="feedbackInput" placeholder="Share your thoughts..."></textarea>
+            <button id="submitFeedback">Submit</button>
+            <div id="feedbackDisplay"></div>
+        </section>
+    </div>
+
+    <script src="PAS2.js"></script>
+</body>
+</html>

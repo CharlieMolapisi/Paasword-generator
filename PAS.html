@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="PAS.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div class="password-length">
+            <label for="length">Select Password Length:</label>
+            <select id="length">
+                <option value="8">8 Characters</option>
+                <option value="16">16 Characters</option>
+                <option value="24">24 Characters</option>
+            </select>
+        </div>
+        <button id="generate">Generate Password</button>
+        <div class="result">
+            <h2>Your Password:</h2>
+            <p id="password"></p>
+        </div>
+    </div>
+    <script src="PAS.js"></script>
+</body>
+</html>
